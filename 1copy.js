@@ -105,6 +105,7 @@ videoPlayerItems.forEach((videoPlayerItem, index) => {
 		}
 	}
 
+	/* При клике на прогрессбар воспроизводит видео на момент клика */
 	function videoRewind(event) {
 		let widthProgress = videoPlayer.offsetWidth,
 				positionOffset = event.offsetX
@@ -114,6 +115,7 @@ videoPlayerItems.forEach((videoPlayerItem, index) => {
 		videoPlayer.play();
 	}
 	
+	// Обновляет полосу просмотренного видео
 	function progressUpdate() {
 		let duration = videoPlayer.duration,
 				currentTime = videoPlayer.currentTime
